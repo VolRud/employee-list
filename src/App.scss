@@ -1,0 +1,85 @@
+#root{
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    .employee-list{
+        width: 25%;
+        border-right: 3px solid #000000;
+        text-align: center;
+        button{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            
+        }
+        .employee-card{
+            cursor: pointer;
+            border-bottom: 3px solid gray;
+            span:first-child{
+                font-weight: 700;
+            }
+            span{
+                display: block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        .employee-card-active{
+            background-color: gray;
+        }
+    }
+    .employee-details{
+        width: 70%;
+        .employee-data{
+            span{
+                display: block;
+                margin: 10px 20px;
+            }
+            button{
+                margin: 10px 20px;
+            }
+            input{
+                margin-left: 10px;
+            }
+        }
+       .employee-progress-bar{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            .employee-progress-step{
+                cursor: pointer;
+                position: relative;
+                flex-grow: 1;
+                border-top: 2px solid #ECEDF1;
+                border-bottom: 2px solid #ECEDF1;
+                height: 31px;
+                text-align: center;
+                line-height: 31px;
+            }
+            .employee-progress-step::after{
+                content: "";
+                border-top: 2px solid #ECEDF1;
+                border-right: 2px solid #ECEDF1;
+                position: absolute;
+                right: -13px;
+                top: 4px;
+                height: 21px;
+                width: 21px;
+                transform: rotate(45deg);
+            }
+            .employee-progress-step-active{
+                background-color: #185AD2;
+                border: 2px solid transparent;
+                font-weight: 700;
+            }
+            .employee-progress-step-active::after{
+                background-color: #185AD2;
+                border: none;
+                height: 25px;
+                width: 25px;
+                top: 3px;
+            }
+       }
+    }
+}

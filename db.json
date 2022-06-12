@@ -1,0 +1,16 @@
+{
+  "employees": [
+    {
+      "name": "Volodynyr",
+      "phone": "+4915204814904",
+      "id": 91,
+      "status": "APPROVED"
+    },
+    {
+      "name": "Olga",
+      "phone": "+380639175522",
+      "status": "ACTIVE",
+      "id": 93
+    }
+  ]
+}
